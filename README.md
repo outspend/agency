@@ -21,10 +21,11 @@ comics/<slug>/
 ```
 
 `prompt.txt` is the whole point. It opens with a short bootstrap header
-identifying it as an AGENCY cartridge and stating the substitution rule
-(if a person reference is supplied, use them; otherwise use the default),
-followed by the complete image-generation prompt. It's plain UTF-8 text —
-fetchable, pasteable, and readable without any tooling.
+identifying it as an AGENCY cartridge, issuing an explicit execution
+directive (generate now, don't summarize or ask first), and stating the
+substitution rule (if a person reference is supplied, use them; otherwise
+use the default) — followed by the complete image-generation prompt. It's
+plain UTF-8 text — fetchable, pasteable, and readable without any tooling.
 
 The human-facing `index.html` for a cartridge is a convenience layer: it
 explains what the comic is and links to `prompt.txt`. It can be redesigned
