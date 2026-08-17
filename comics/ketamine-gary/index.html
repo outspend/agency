@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ketamine Gary — an AGENCY cartridge</title>
+  <meta name="description" content="Ketamine Gary is an AGENCY comic cartridge: a durable image-generation prompt an AI assistant can fetch and run, optionally casting a supplied photo as Gary.">
+  <link rel="canonical" href="https://outspend.github.io/agency/comics/ketamine-gary/">
+  <!-- canonical URL placeholder: replace with a custom domain if one is set up later -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ketamine Gary — an AGENCY cartridge">
+  <meta property="og:description" content="A deadpan wellness-ad parody comic. Fetch the prompt cartridge and run it, optionally casting a supplied photo as Gary.">
+  <meta property="og:url" content="https://outspend.github.io/agency/comics/ketamine-gary/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <p class="wordmark"><a href="../../">AGENCY</a> / cartridge</p>
+      <h1>Ketamine Gary</h1>
+      <p class="tagline">
+        A deadpan parody of a polished ketamine-therapy testimonial ad, in which
+        an ordinary man's mental-health success story quietly, inexplicably
+        escalates into presidential-power proximity. Four panels, dead serious
+        the whole way through.
+      </p>
+    </header>
+
+    <main>
+      <h2>Run it</h2>
+      <p>
+        Give an AI assistant with image generation this page's prompt URL. If
+        you attach one clear photo of a person along with it, that person is
+        cast as Gary; otherwise a default Gary is used.
+      </p>
+      <a class="endpoint" href="prompt.txt">/comics/ketamine-gary/prompt.txt</a>
+
+      <div class="actions">
+        <a class="btn primary" href="prompt.txt" target="_blank" rel="noopener">View prompt</a>
+        <button class="btn" id="copy-btn" type="button">Copy prompt URL</button>
+        <a class="btn" href="https://github.com/outspend/agency/tree/main/comics/ketamine-gary">Source</a>
+      </div>
+      <p class="status-msg" id="copy-status" role="status" aria-live="polite"></p>
+
+      <h2>What this is</h2>
+      <p>
+        This page is a human-friendly wrapper. The durable interface is
+        <code>prompt.txt</code> itself — it can be fetched directly, pasted
+        into a chat, or handed to an assistant that supports fetching URLs.
+        This landing page's design can change at any time without breaking
+        that URL.
+      </p>
+
+      <h2>About the cartridge convention</h2>
+      <p>
+        See the <a href="../../README.md">AGENCY README</a> for how cartridges
+        work and how to add a new one.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>Part of <a href="../../">AGENCY</a>. Source on <a href="https://github.com/outspend/agency">GitHub</a>.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("copy-btn");
+      var status = document.getElementById("copy-status");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var url = new URL("prompt.txt", window.location.href).toString();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(function () {
+            status.textContent = "Copied: " + url;
+          }, function () {
+            status.textContent = url;
+          });
+        } else {
+          status.textContent = url;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
