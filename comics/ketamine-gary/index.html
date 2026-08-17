@@ -34,7 +34,7 @@
         you attach one clear photo of a person along with it, that person is
         cast as Gary; otherwise a default Gary is used.
       </p>
-      <a class="endpoint" href="prompt.txt">/comics/ketamine-gary/prompt.txt</a>
+      <a class="endpoint" href="https://raw.githubusercontent.com/outspend/agency/main/comics/ketamine-gary/prompt.txt">raw.githubusercontent.com/outspend/agency/main/comics/ketamine-gary/prompt.txt</a>
 
       <div class="actions">
         <a class="btn primary" href="prompt.txt" target="_blank" rel="noopener">View prompt</a>
@@ -70,7 +70,7 @@
       var status = document.getElementById("copy-status");
       if (!btn) return;
       btn.addEventListener("click", function () {
-        var url = new URL("prompt.txt", window.location.href).toString();
+        var url = "https://raw.githubusercontent.com/outspend/agency/main/comics/ketamine-gary/prompt.txt";
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(url).then(function () {
             status.textContent = "Copied: " + url;

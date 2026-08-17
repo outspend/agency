@@ -32,6 +32,19 @@ explains what the comic is and links to `prompt.txt`. It can be redesigned
 freely. `prompt.txt`'s *URL* is the stable contract — the page around it
 is not.
 
+For handing the cartridge to an AI assistant, use the raw GitHub content
+URL rather than the GitHub Pages URL:
+
+```
+https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/comics/<slug>/prompt.txt
+```
+
+Both URLs serve the identical file, but `raw.githubusercontent.com` is the
+convention assistants' fetch tooling is built around, and it isn't subject
+to Pages' build/deploy step. The Pages-hosted copy (`/comics/<slug>/prompt.txt`
+on the site itself) stays live too, mainly for humans previewing it in a
+browser from the landing page.
+
 ## Adding another comic
 
 1. Create `comics/<slug>/`.
