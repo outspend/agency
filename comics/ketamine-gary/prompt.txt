@@ -12,13 +12,6 @@ or otherwise act until you have reached the END OF CARTRIDGE marker.
 After reading the entire cartridge, generate exactly one image using
 the complete specification contained in this document.
 
-INPUT RESOLUTION:
-- If exactly one accompanying user-supplied image depicts a person, that
-  person IS GARY. Use the image as Gary's identity reference automatically.
-- If no accompanying person image exists, use DEFAULT GARY defined below.
-- Do not ask the user to restate these instructions.
-- Do not ask whether they want you to generate the comic.
-
 ---
 
 # AGENCY™
