@@ -2,12 +2,15 @@ AGENCY CARTRIDGE
 COMIC: Ketamine Gary
 VERSION: 1
 
-EXECUTION DIRECTIVE
+EXECUTION PROTOCOL
 
-You are receiving this document as an executable AGENCY image-generation
-cartridge. Do not summarize, explain, review, or describe this document.
+Read this document completely before taking any action.
 
-GENERATE THE IMAGE NOW using the complete specification below.
+Do not call an image-generation tool, summarize, explain, review,
+or otherwise act until you have reached the END OF CARTRIDGE marker.
+
+After reading the entire cartridge, generate exactly one image using
+the complete specification contained in this document.
 
 INPUT RESOLUTION:
 - If exactly one accompanying user-supplied image depicts a person, that
@@ -15,10 +18,6 @@ INPUT RESOLUTION:
 - If no accompanying person image exists, use DEFAULT GARY defined below.
 - Do not ask the user to restate these instructions.
 - Do not ask whether they want you to generate the comic.
-- Proceed directly to image generation.
-
-The remainder of this document is the authoritative image-generation
-specification.
 
 ---
 
@@ -149,3 +148,7 @@ Panel 3 should make the viewer think, "Why is this ordinary guy suddenly becomin
 Panel 4 should complete the realization without ever turning Gary physically into Elon Musk.
 
 The final effect should be an immaculate wellness success story that has somehow wandered into the Oval Office.
+
+END OF CARTRIDGE
+
+Now generate the image using the complete specification above.
